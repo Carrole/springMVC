@@ -19,9 +19,6 @@ public class BoardControllerSpring {
 	
 	@RequestMapping(value="/insertBoard.do")
 	public String insertBoard() {
-		System.out.println("insertBoard() ==> ");
-		
-		//���ȣ��
 		return "insertBoardView";
 	}
 

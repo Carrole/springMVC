@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<center>
+	<div class="container">
 		<h2>선택된 게시판 보기</h2>
 		<table border="1">
 			<tr height="50" align="center">
@@ -22,7 +22,7 @@
 
 			<tr height="50" align="center">
 				<td width="150">글작성자</td>
-				<td width="250">${board.writer}</td>
+				<td width="250">${board.users}</td>
 			</tr>
 
 			<tr height="50" align="center">
@@ -42,6 +42,6 @@
 					onclick="location.href='getBoardList.do'" /></td>
 			</tr>
 		</table>
-	</center>
+	</div>
 </body>
 </html>

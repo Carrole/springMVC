@@ -9,31 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b6286d5-7282-4a99-8f21-dcdc154647ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/boardex/client/BoardClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/boardex/client/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/boardex/impl/BoardDaoSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/boardex/impl/BoardDo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/springmvcAno/BoardControllerSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/appServlet-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/action-contextAno.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/getBoardListView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/getBoardView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/getModifyView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/insertBoardView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/config/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j.xml" afterDir="false" />
+    <list default="true" id="5b6286d5-7282-4a99-8f21-dcdc154647ae" name="Changes" comment="초기 소스코드">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/boardex/client/BoardClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/boardex/client/BoardClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/boardex/impl/BoardDaoSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/boardex/impl/BoardDaoSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/boardex/impl/BoardDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/boardex/impl/BoardDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/springmvcAno/BoardControllerSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/springmvcAno/BoardControllerSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/getBoardListView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/getBoardListView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/getBoardView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/getBoardView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/getModifyView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/getModifyView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/insertBoardView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boardViews/insertBoardView.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,8 +196,16 @@
       <workItem from="1669719234458" duration="1272000" />
       <workItem from="1669889909688" duration="2326000" />
       <workItem from="1669898807090" duration="784000" />
-      <workItem from="1669899597069" duration="5939000" />
+      <workItem from="1669899597069" duration="12640000" />
     </task>
+    <task id="LOCAL-00001" summary="초기 소스코드">
+      <created>1669960017817</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669960017817</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,5 +221,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="초기 소스코드" />
+    <option name="LAST_COMMIT_MESSAGE" value="초기 소스코드" />
   </component>
 </project>

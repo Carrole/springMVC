@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<center>
+	<div class="container">
 		<h2>선택된 게시판 수정하기</h2>
 		<form action="modifyProcBoard.do?seq=${board.seq}" method="post">
 			<table border="1">
@@ -23,7 +23,7 @@
 
 				<tr height="50" align="center">
 					<td width="150">글작성자</td>
-					<td width="250">${board.writer}</td>
+					<td width="250">${board.users}</td>
 				</tr>
 
 				<tr height="50" align="center">
@@ -40,6 +40,6 @@
 				</tr>
 			</table>
 		</form>
-	</center>
+	</div>
 </body>
 </html>
