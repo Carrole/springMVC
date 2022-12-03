@@ -19,10 +19,10 @@ rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCE
 			<input type="text" class="form-control" name="users">
 
 			<label class="form-label">글 내용</label>
-			<textarea class="form-control" type="text" name="content" rows="3"></textarea>
+			<textarea class="form-control summernote" rows="5" name="content"></textarea>
 
-						<input type="submit" value="저장" />
-						<input type="reset" value="취소" />
+			<input type="submit" value="저장" />
+			<input type="reset" value="취소" />
 		</form>
 	</div>
 </body>

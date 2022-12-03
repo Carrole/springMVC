@@ -27,13 +27,15 @@ public class BoardDaoSpring {
 	}
 	
 	public BoardDo getBoard(BoardDo bdo) {
+		System.out.println(bdo);
+		updateViewCount(bdo);
 		String sql = "select * from post where seq=?";
 		Object[] args = {bdo.getSeq()};
 		return jdbcTemplate.queryForObject(sql, args, new BoardRowMapper());
 	}
 	
 	public ArrayList<BoardDo> getBoardList(){
-		String sql = "select * from post";
+		String sql = "select * from post order by created_at desc";
 		Object[] args = {};
 		return (ArrayList<BoardDo>)jdbcTemplate.query(sql, args, new BoardRowMapper());		
 	}
@@ -41,9 +43,12 @@ public class BoardDaoSpring {
 	public void updateBoard(BoardDo bdo) {
 		String sql = "update post set title=?, content=? where seq=?";
 		jdbcTemplate.update(sql, bdo.getTitle(), bdo.getContent(), bdo.getSeq());
-		
 	}
-	
+
+	public void updateViewCount(BoardDo bdo) {
+		String sql = "update post set viewed=? where seq=?";
+		jdbcTemplate.update(sql, bdo.getViewed() + 1, bdo.getSeq());
+	}
 	public void deleteBoard(BoardDo bdo) {
 		String sql = "delete from post where seq=?";
 		jdbcTemplate.update(sql, bdo.getSeq());

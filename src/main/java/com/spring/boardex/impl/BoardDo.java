@@ -7,7 +7,7 @@ public class BoardDo {
 	private String content;
 	private String created_at;
 	private int viewed;
-	
+
 	@Override
 	public String toString() {
 		return "BoardDo [seq=" + seq + 
@@ -54,11 +54,4 @@ public class BoardDo {
 	public void setViewed(int viewed) {
 		this.viewed = viewed;
 	}
-	
-	
-	
-	
-	
-	
-
 }

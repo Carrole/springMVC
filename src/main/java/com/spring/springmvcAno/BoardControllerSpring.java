@@ -2,7 +2,10 @@ package com.spring.springmvcAno;
 
 import java.util.ArrayList;
 
+import com.spring.comment.impl.CommentDaoSpring;
+import com.spring.comment.impl.CommentDo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +19,9 @@ public class BoardControllerSpring {
 	
 	@Autowired
 	BoardDaoSpring boardDaoSpring;
+
+	@Autowired
+	CommentDaoSpring commentDaoSpring;
 	
 	@RequestMapping(value="/insertBoard.do")
 	public String insertBoard() {
@@ -32,8 +38,18 @@ public class BoardControllerSpring {
 	@RequestMapping(value="/getBoard.do")
 	public String getBoard(BoardDo bdo, BoardDaoSpring bdao, Model model) {
 		BoardDo board = boardDaoSpring.getBoard(bdo);
+		ArrayList<CommentDo> clist = new ArrayList<CommentDo>();
+		String message = "success";
+		clist = commentDaoSpring.getCommentList(bdo.getSeq());
+
+		if(clist.size() == 0) {
+			message = "empty";
+		}
+
 		model.addAttribute("board", board);
-				
+		model.addAttribute("clist", clist);
+		model.addAttribute("message", message);
+
 		return "getBoardView";
 	}
 	
