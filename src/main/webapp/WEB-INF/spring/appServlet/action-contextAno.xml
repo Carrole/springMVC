@@ -9,10 +9,10 @@
 	<context:component-scan
 		base-package="com.spring.*" />
 
-	<!-- WEB-INF/views/boardViews/AAA.jsp -->
+	<!-- WEB-INF/views/postViews/AAA.jsp -->
 	<!-- prefix는 setPrefix가 될 것임, suffix는 뒤에 붙는다는 뜻 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="WEB-INF/views/boardViews/" />
+		<property name="prefix" value="WEB-INF/views/postViews/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
 

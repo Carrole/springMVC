@@ -17,7 +17,7 @@ public class CommentControllerSpring {
 	public String insertComment(CommentDo cdo) {
 		System.out.println(cdo.getPost_id());
 		commentDaoSpring.insertComment(cdo);
-		return "redirect:getBoard.do?seq=" + cdo.getPost_id();
+		return "redirect:getPost.do?seq=" + cdo.getPost_id();
 	}
 
 	@RequestMapping(value="/deleteComment.do")
@@ -25,6 +25,6 @@ public class CommentControllerSpring {
 		CommentDo deletedComment = commentDaoSpring.deleteComment(cdo);
 		System.out.println(deletedComment);
 		System.out.println("deleted");
-		return "redirect:getBoard.do?seq=" + deletedComment.getPost_id();
+		return "redirect:getPost.do?seq=" + deletedComment.getPost_id();
 	}
 }
